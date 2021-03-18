@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="=UTF-8">
+        <meta name="Author" content="Érika Morais Xavier">
+        <meta name="Generator" content="Visual Studio Code">
+        <meta name="Description" content="tags para formulários">
+        <meta name="Keywords" content="html, formulario, tag">
+
+        <title>Tags para formulários</title>
+    </head>
+
+    <body>
+        <p>*Apostila do professor Julius (Etec Sebrae)</p>
+        <p>
+            As tags para a criação de formulário são &lt;form&gt; e &lt;/form&gt;
+        </p>
+        <p>
+            Os atributos da tag &lt;form&gt; são:
+        </p>
+
+        <ul>
+            <li>
+                <b>action</b>: informa o endereço (URL) para o qual o conteúdo do formulário será enviado.
+                Se este atributo for omitido, o endereço corrente (página atual) será usado.
+            </li>
+            <li>
+                <b>method</b>: informa o método de transferência dos dados que será usado pelo atributo
+                “action”, sendo possível adotar os valores:
+
+                <li>
+                    <b>get</b>: valor padrão do atributo “action”, usado quando se deseja enviar os dados
+                    de um formulário para um endereço (URL de um servidor), seguindo o formato
+                    “endereço?nome=ação”. Esse tipo de ação apresenta os dados do formulário na
+                    barra de endereços do browser.
+                </li>
+                <li>
+                    <b>post</b>: faz com que os dados do formulário sejam enviados para o servidor
+definido no atributo “action” em um bloco de dados. Este é o método mais
+indicado, uma vez que os dados não são apresentados na barra de endereço do
+navegador.
+                </li>
+            </li>
+
+            <li><b>enctype</b>: especifica a forma de submissão dos dados de um formulário quando se usa
+                o valor “post” no atributo “method”. O valor padrão desse atributo é “application/xwww-
+                form-urlencoded” (dados do formulário são passados de forma codificada).
+                Caso seja usado com o valor “file” do atributo “type” (será mostrado mais adiante), o
+                valor desse atributo deve ser “multpart/form-data” (dados do formulário são
+                passados em multipartes). É muito comum o uso do valor “text/plain” para envio de
+                dados de um formulário de maneira formatada.
+            </li>
+            <li>
+                <b>autocomplete</b>: (criado no HTML 5) indica que o browser pode (conteúdo = “on”) ou
+                não (conteúdo = “off”) recuperar automaticamente uma informação já preenchida
+                anteriormente pelo usuário (exemplo: nome, endereço, email etc.) Normalmente
+                este atributo é usado com elemento input.</li>
+            </li>    
+        </ul>
+
+    </body>
+
+</html>
