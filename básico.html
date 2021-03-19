@@ -1,0 +1,358 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>básico</title>
+<style type="text/css">
+
+
+
+body {
+	margin-left:20px;
+	margin-right:20px;
+}
+
+h1 {
+	margin-left:20px;
+}
+
+h2 {
+	margin-left:30px;
+}
+
+h3, h4, h5, h6, input, p, li, table, form {
+	margin-left:40px;
+}
+
+
+hr {
+	width:90%;
+	text-align: left;
+}
+
+
+.vermelho {
+	color: #FF0000;
+}
+.caixa {
+	border-style: solid;
+	border-width: 1px;
+}
+
+
+.nota {
+	font-size: large;
+	font-weight: normal;
+	font-style: italic;
+	font-style: strong;
+}
+
+</style>
+</head>
+
+<body>
+
+	<h1>Header 1 - tag h1</h1>
+	<h2>Header 2 - tag h2</h2>
+	<h3>Header 3 - tag h3</h3>
+	<h4>Header 4 - tag h4</h4>
+	<h5>Header 5 - tag h5</h5>
+	<h6>Header 6 - tag h6</h6>
+	<p>
+	<h7>Header 7 - tag h7 (não existe)</h7>
+
+	</p>
+
+	<p>&nbsp;</p>
+	<h2>Tag hr:</h2>
+	<hr />
+
+	<h1>Formatações de Texto</h1>
+	<h3>Itálico</h3>
+	<p>&lt;i&gt;<em>itálico</em>&lt;/i&gt; Utilização não é mais recomentada.<br />
+	Utilizar &lt;em&gt;<em>ênfase</em>&lt;/em&gt;</p>
+	<h3>Negrito</h3>
+	<p>&lt;b&gt;<strong>bold</strong>&lt;/b&gt; Não é mais recomendado<br />
+	Utilizar &lt;strong&gt;<strong>strong</strong>&lt;/stron&gt;</p>
+	<h3>Sublinhado</h3>
+<p>&lt;u&gt;<u>sublinhado</u>&lt;/u&gt;</p>
+<h3>Taxado</h3>
+<p>&lt;strike&gt;<strike>taxado</strike>&lt;/strike&gt;</p>
+<hr />
+	<p>&nbsp;</p>
+	<h1>LISTAS</h1>
+	<h2>LISTA não ordenada</h2>
+	<h3>&lt;ul&gt; unordered list</h3>
+	<h3>Types:</h3>
+	<p>&lt;ul type="<span class="vermelho">circle</span>"&gt;</p>
+	<ul type="circle">
+		<li>Home</li>
+		<li>Quem Somos</li>
+		<li>Contato</li>
+	</ul>
+	<p>
+		<br />
+		&lt;ul type="<span class="vermelho">disc</span>"&gt;
+		<ul type="disc">
+		<li>Home</li>
+		<li>Quem Somos</li>
+		<li>Contato</li>
+	</ul>
+
+	</p>
+		<p>
+		<br />
+		&lt;ul type="<span class="vermelho">square</span>"&gt;
+		<ul type="square">
+		<li>Home</li>
+		<li>Quem Somos</li>
+		<li>Contato</li>
+	</ul>
+
+	</p>
+	<p>&nbsp;</p>
+	<h2>LISTA ORDENADA</h2>
+	<h3>&lt;ol&gt; ordered list</h3>
+	<p>&lt;ol type="<span class="vermelho">1</span>"&gt;</p>
+	<ol type="1">
+		<li>item 1</li>
+		<li>item 2</li>
+		<li>item 3</li>
+	</ol>
+<p>
+	<p>&lt;ol type="<span class="vermelho">a</span>"&gt;</p>
+	<ol type="a">
+		<li>item 1</li>
+		<li>item 2</li>
+		<li>item 3</li>
+	</ol>
+</p>
+
+<p>
+	<p>&lt;ol type="<span class="vermelho">A</span>"&gt;</p>
+	<ol type="A">
+		<li>item 1</li>
+		<li>item 2</li>
+		<li>item 3</li>
+	</ol>
+</p>
+
+<p>
+	<p>&lt;ol type="<span class="vermelho">i</span>"&gt;</p>
+	<ol type="i">
+		<li>item 1</li>
+		<li>item 2</li>
+		<li>item 3</li>
+	</ol>
+</p>
+
+<p>
+	<p>&lt;ol type="<span class="vermelho">I</span>"&gt;</p>
+	<ol type="I">
+		<li>item 1</li>
+		<li>item 2</li>
+		<li>item 3</li>
+	</ol>
+</p>
+	<h1>LINKS</h1>
+	<h2>&lt;a&gt; anchor</h2>
+	<p>&lt;a href=""&gt;Home&lt;/a&gt;</p>
+	<p><a href="">Home</a></p>
+	<p>Ao não definir uma referência, o browser carrega a página em que está.</p>
+	<p>&nbsp;</p>
+	<h1>TABELAS</h1>
+	<h2>&lt;table&gt;<br />
+	&lt;th&gt; &lt;thead&gt;table header - cabeçalho: diferencia os títulos dos conteúdos.<br />
+	&lt;tr&gt; table row<br />
+	&lt;td&gt; table data / table cell</h2>
+	<table border="1" width="50%">
+		
+		<tr>
+			<th>Códigos</th>
+			<th>Produto</th>
+			<th>Preço</th>
+		</tr>
+		
+		<tr>
+			<td rowspan="2"></td>
+			<td></td>
+			<td></td>
+		</tr>
+		
+		<tr>
+			<td colspan="2"></td>
+
+		</tr>
+		
+	
+	</table>
+	<p>&lt;colspan&gt; extensão da coluna. Mescla colunas.<br />
+	&lt;rowspan&gt; extensão da linha. Mescla linhas</p>
+	<p>&nbsp;</p>
+	<h1>FORMULÁRIOS</h1>
+	<h2>tag &lt;input&gt; - entrada</h2>
+	<h3>&lt;input type=<span class="vermelho">"text"</span>&gt;<br />
+	&lt;input type=<span class="vermelho">"password"</span>&gt;<br />
+	</h3>
+	
+	<form action="exemplo.php">
+		
+		<p>Login:<input type="text" name="login" /></p>
+		
+		<p>Senha:<input type="password" name="password" /></p>
+		
+		<input type="submit" value="Logar" /> &lt;com este botão de type="submit" o 
+		login e senha aparecem na barra de endereços.</form>
+
+<p>&lt;form action="exemplo.php"&gt;<br />
+&lt;p&gt;Login:&lt;input type="text" name="login"&gt;&lt;/p&gt;<br />
+&lt;p&gt;Senha:&lt;input type="password" name="password"&gt;&lt;/p&gt;<br />
+&lt;input type="submit" value="Logar"&gt;</p>
+	<p>&nbsp;&nbsp;</p>
+
+	
+	<h2>
+		
+			
+	
+	type "radio"</h2>
+	<p>
+		
+			
+	
+	Para que o usuário escolha somente uma alternativa, é necessário colocar o 
+	atributo "name=''".</p>
+	<div class="caixa">
+	<p>
+		
+			
+	
+	&lt;input type="radio" /&gt; Masculino&lt;br /&gt;<br />
+	&lt;input type="radio" /&gt; Feminino</p>
+	
+	<p>
+		<input type="radio" /> Masculino<br />
+		<input type="radio" /> Feminino
+	</p>
+	</div>
+	<p>
+		<br />
+		Para sabermos o valor, se masculino ou feminino, que o usuário escolheu, 
+		devemos utilizar o atributo value="".</p>
+	<div class="caixa"><p>
+		&lt;input type="radio" name="sexo"/&gt; Masculino&lt;br /&gt;<br />
+		&lt;input type="radio" name="sexo"/&gt; Feminino	&lt;input type="radio" 
+		name="sexo" value="M" /&gt; Masculino&lt;br /&gt;<br />
+		&lt;input type="radio" name="sexo" value="F" /&gt; Feminino<br />
+		<input type="radio" name="sexo" value="M" /> Masculino<br />
+		<input type="radio" name="sexo" value="F" /> Feminino
+	</p>
+	</div>
+	<p>&nbsp;</p>
+	<h2>type "checkbox"</h2>
+	<div>
+	<p>&lt;input type="checkbox" name="interesses" /&gt;Futebol&lt;br /&gt;<br />
+	&lt;input type="checkbox" name="interesses" /&gt;Moda&lt;br /&gt;<br />
+	&lt;input type="checkbox" name="interesses" /&gt;Cursos&lt;br /&gt;<br />
+	&lt;input type="checkbox" name="interesses" /&gt;Artes<br />
+		</p>
+		<p>
+			<input type="checkbox" name="interesses" />Futebol<br />
+			<input type="checkbox" name="interesses" />Moda<br />
+			<input type="checkbox" name="interesses" />Cursos<br />
+			<input type="checkbox" name="interesses" />Artes
+		</p>
+	</div>
+	
+	<p>&nbsp;</p>
+	<h2>type="button"</h2>
+	<p>&lt;input type="button" onclick="alert('Você clicou no botão!')" 
+	value="Clique!" /&gt;</p>
+		<p><input type="button" onclick="alert('Você clicou no botão!')" value="Clique!" /></p>
+	<p>&nbsp;</p>
+	<h2>type="color"</h2>
+		<p>
+		&lt;form&gt;&lt;input type="color" name="corfavorita" value="#ffcc00"/&gt;<br />
+	<p>
+		Selecione uma cor:	<form><input type="color" name="corfavorita" value="#ffcc00"/>
+			<input type="submit" /></form>
+		&nbsp;</p>
+	<h2>type="date" - <span class="nota"> <strong>safari não suporta</strong></span> </h2>
+	<p>&lt;input type="date" name="data" max="1979-12-31" min="2000-01-02"/&gt;</p>
+		<p><input type="date" name="data" max="1979-12-31" min="2000-01-02"/></p>
+	<p>&nbsp;</p>
+	<h2>type="datetime-local" - <span class="nota"><strong>safari e mozilla não suportam</strong></span></h2>
+		<p><input type="datetime-local" name="datalocal" /></p>
+	<p>&nbsp;</p>
+	<h2>type="email" - <span class="nota"><strong>safari não suporta</strong></span></h2>
+		&lt;form&gt;<br />
+	E-mail:<br />
+	&lt;input type="email" name="email"&gt;<br />
+	&lt;input type="submit"&gt;<br />
+	&lt;/form&gt;<br />
+	<br />
+	&lt;p&gt;<br />
+	&lt;b&gt;Note:&lt;/b&gt;type="email" is not supported in IE9 and earlier.&lt;/p&gt;<br />
+	<p>&nbsp;</p>
+		<form>
+  E-mail:
+  <input type="email" name="email" placeholder="Digite seu e-mail" />
+  <input type="submit" />
+</form>
+
+<p>&nbsp;</p>
+	<h2>type "month"</h2>
+		<p><form>
+  Birthday (month and year):
+  <input type="month" name="bdaymonth">
+</form></p>
+	<p>&lt;form&gt;<br />
+	Birthday (month and year):<br />
+	&lt;input type="month" name="bdaymonth"&gt;<br />
+	&lt;/form&gt;</p>
+	<p>&nbsp;</p>
+	<h2>type="number"</h2>
+<p>The <strong>input type="number"</strong> defines a numeric input field.</p>
+<p>You can use the min and max attributes to add numeric restrictions in the input field:</p>
+
+<form>
+  Quantity (between 1 and 5):
+  <input type="number" name="quantity" min="1" max="5" />
+  <input type="submit" />
+</form>
+</p>
+
+	<h2>tag &lt;select&gt;</h2>
+	<p>&lt;select&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;option value="Engenharia de 
+	Computação"&gt;Engenharia de Computação&lt;/option&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;option value="Ciência da 
+	Computação"&gt;Ciência da Computação&lt;/option&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;option value="Engenharia de 
+	Software"&gt;Engenharia de Software&lt;/option&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;option value="Análise e 
+	Desenvolvimento de Sistemas"&gt;Análise e Desenvolvimento de Sistemas&lt;/option&gt;<br />
+	&lt;/select&gt;</p>
+	<p>
+	<select>
+		<option value="Engenharia de Computação">Engenharia de Computação</option>
+		<option value="Ciência da Computação">Ciência da Computação</option>
+		<option value="Engenharia de Software">Engenharia de Software</option>
+		<option value="Análise e Desenvolvimento de Sistemas">Análise e Desenvolvimento de Sistemas</option>
+	</select></p>
+	<p>
+	&nbsp;</p>
+	<h2>
+	tag &lt;textarea&gt;</h2>
+	<p>
+	&lt;textarea cols="70" rows="8"&gt;&lt;/textarea&gt;</p>
+	<p>
+		<textarea cols="70" rows="8"></textarea>
+		
+	</p>
+	<p>
+	&nbsp;</p>
+</body>
+
+</html>

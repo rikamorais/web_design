@@ -12,6 +12,10 @@
 
     <body>
         <p>*Apostila do professor Julius (Etec Sebrae)</p>
+
+        <br>
+
+        <h3>Tag &lt;form&gt;...&lt;/form&gt;</h3>
         <p>
             As tags para a criação de formulário são &lt;form&gt; e &lt;/form&gt;
         </p>
@@ -57,6 +61,114 @@ navegador.
                 este atributo é usado com elemento input.</li>
             </li>    
         </ul>
+
+        <br>
+        <br>
+
+        <h3>Tag &lt;fieldset&gt;...&lt;/fieldset&gt;</h3>
+        <p>é usada para agrupar elementos relacionados em um formulário.
+
+            A tag desenha uma caixa ao redor dos elementos relacionados.</p>
+
+        <br>
+        <br>
+
+        <h3>Tag &lt;legend&gt;</h3>
+            <p>A tag define uma legenda para o elemento &lt;fieldset&gt; .</p>
+
+            
+
+            <table>
+                <tr>
+                    <td width="300">
+                        <p><strong>Exemplo:</strong></p>
+                        
+                        <pre>
+                &lt;form&gt;
+                    &lt;fieldset&gt;
+                        &lt;legend&gt;Exemplo
+                        Legenda
+                    &lt;/fieldset&gt;
+                &lt;/form&gt;
+                </pre>
+                    </td>
+
+                    <td width="300">
+                        <p><strong>Resultado:</strong></p>
+            <p>
+            <form>
+                <fieldset>
+                    <legend>Legenda
+                    </legend>
+                </fieldset>
+            </form>
+            </p>
+                    </td>
+                </tr>
+            </table>
+
+            
+            
+
+           
+
+
+
+            <br>
+            <br>
+
+        <h3>Tag &lt;label&gt;</h3>
+
+        <p>
+            A tag &lt;label&gt; apresenta um texto de identificação (rótulo). Está ligado
+diretamente com outros elemento de um formulário e sua função é identificá-los.
+Possui os seguintes atributos:
+        </p>
+
+<ul>
+    <li>
+        <b>for</b>: o nome interno associado ao atributo “id” de identificação de outros
+elementos de formulário (serão apresentados em seguida).
+    </li>
+    <li><b>title</b>: o texto explicativo que será apresentado quando o ponteiro do mouse
+permanecer sobre esse elemento por mais de um segundo. Esse atributo é
+opcional.
+    </li>
+</ul>
+
+<p>Exemplo 1 de uso: &lt;label&gt;Nome&lt;/label&gt;</p>
+<p>Exemplo 2 de uso: &lt;label for=“cep”&gt;CEP&lt;/label&gt;</p>
+<p>Exemplo 3 de uso: &lt;label title=“Exemplo de observação”&gt;OBS.:&lt;/label&gt;</p>
+
+<p>Ainda assim, o uso de um label não consegue ser evidentemente demonstrado sem
+estar associado a algum outro elemento. Veja a seguir um uso mais eficiente dele.</p> 
+
+<p><strong>Atenção</strong>: Para esse elemento é necessário abrir e fechar a tag: &lt;label&gt;...&lt;label&gt;</p>
+  
+<br>
+<br>
+
+<h3>Tag input</h3>  
+<p>(tag órfã - &lt;input/&gt;): utilizado para criar campos de entrada de
+dados em um formulário. É o recurso mais comum e mais utilizado. Permite a
+inserção de múltiplos componentes de controle em um formulário, que podem ser
+campos de textos, botões, controles deslizantes e outros. Possui os seguintes
+atributos:</p>
+
+<ul>
+    <li><strong>name</strong>: estabelece o nome do elemento (campo, área de texto ou botão) no
+formulário. Obrigatório quando há mais de um elemento do mesmo tipo.</li>
+    <li><strong>id</strong>: nome de identificação associado ao atributo “for” da tag &lt;label&gt;.</li>
+    <li><strong>type</strong>: tipo de entrada de dados que o campo vai receber. Aceita os valores:
+        <li><strong>text</strong>: formato caixa de texto, utilizado para receber dados do tipo caractere
+(texto simples).</li>
+        <li><strong>password</strong>: utilizado exclusivamente para campos de senha.</li>
+        <li><strong>radio</strong>: tem a forma de um botão circular, utilizado para selecionar apenas
+uma opção numa lista de opções predefinidas (todas as opções devem ter o
+mesmo conteúdo no atributo name).</li>
+    </li>
+</ul>
+
 
     </body>
 
