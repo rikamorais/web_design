@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="styelesheet" type="text/css" href="reset.css">
+        <title>CSS Position</title>
+
+        <style>
+            .absolute {
+                position: absolute;
+                top: 0;
+            }
+
+            .relative {
+                position:relative;
+                top: 100px;
+            }
+
+            .static {
+                position:static;
+                top: 100px;
+            }
+
+            .fixed {
+                position: fixed;
+                top: 100px;
+            }
+
+            .sticky {
+                position: sticky;
+                top 100px;
+            }
+
+            div {
+                width: 500px;
+                height: 500px;
+            }
+
+            .rosa {
+                background-color: rgb(216, 112, 199);
+            }
+
+            .gold {
+                background-color: gold;
+            }
+
+            .verde {
+                background-color: green;
+            }
+
+            .azul {
+                background-color: rgb(0, 110, 255);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="rosa"><span class="absolute">Position absolute. Posição inicial não é a padrão. Não tem como referencial uma posição inicial padrão. No exemplo está top: 0;</span></div>
+        <div class="gold"><span class="relative">Position relative, nova posição relativa à posição inicial padrão. Colocar uma posição. exemplo: top: 100px;</span></div>
+        <div class="verde"><span class="static">Position static, posição inicial padrão. No exemplo o top está com 100px, ou seja, nada se moveu, está static.</span></div>
+        <div class="azul"><span class="fixed">Position fixed fica fixa na tela. Top 100px.</span></div>
+        <div><span class="sticky">Position sticky.</span></div>
+    </body>
+</html>

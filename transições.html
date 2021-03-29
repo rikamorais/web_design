@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS Transições</title>
+
+	<style>
+/*		.btn-lp {
+			height: 150px;
+			width: 100px;
+			transition: color 3s;
+		}
+
+		.btn-lp : hover {
+			height: 300px;
+			width: 200px;
+			color: #F2F2F2;
+		}
+*/
+
+		.item {
+			margin: 5px;
+			background: tomato;
+			text-align: center;
+			font-size: 1.5em;
+			transition: color 3s;
+		}
+
+		.item:hover{
+			background: black;
+			color: white;
+		}
+
+		.item:first-letter{
+			color: blue;
+			font-size: larger;
+		}
+
+		.item:hover::first-letter{
+			color: red;
+		}
+
+
+	</style>
+    </head>
+    <body>
+	<h1>Transições</h1>
+
+	<p>São uma forma de modificar propriedades de estilo de um seletor durante um intervalo de tempo. Isso torma a mudança fluida.</p>
+	<p>As propriedades de transição são:</p>
+        <ul>
+	   <li>transition-delay: tempo de espera antes da transição iniciar</li>
+	   <li>transition-duration: tempo de duração da transição</li>
+	   <li>transition-property: propriedades que serão alteradas</li>
+	   <li>transition-timing-function: função de transição.</li>
+	</ul>
+
+<p>Como são muitas propriedades, podemos utilizar apenas transition como atalho, definindo: propriedade, duração, função de transição e delay. Na prática, os dois mais utilizados são propriedade e duração.</p>
+
+.btn-lp { <br>
+	height: 150px; <br>
+	width: 100px; <br>
+	transition: color 3s; <br> <br>
+}
+
+.btn-lp:hover{ <br>
+	height: 300px; <br>
+	width: 200px; <br>
+	color: #F2F2F2; 
+}<br> <br>
+
+<p class="item">Exemplo</p>
+    </body>

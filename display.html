@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS - Display</title>
+
+        <style>
+
+            h1 { 
+                margin-top: 50px;
+            }
+
+            .container {
+                text-align: center;
+                width: 500px;
+                height: 300px;
+                border: solid;
+                border-color: #cccccc;
+            }
+
+            .container1 {
+                text-align: center;
+                width: 500px;
+                height: 100;
+                border: solid;
+                border-color: #cccccc;
+            }
+
+            .block {
+                display: block;
+            }
+
+            .inline {
+                display: inline;
+            }
+
+            .flex {
+                display: flex;
+            }
+
+            .flex-wrap {
+                flex-wrap: wrap;
+            }
+
+            .inline-block {
+                display:inline-block
+            }
+
+            .row-reverse {
+                display: flex;
+                flex-direction: row-reverse;
+            }
+
+            .column-reverse {
+                flex-direction: column-reverse;
+            }
+
+            .vermelho {
+                background-color: red;
+                height: 50px;
+                width: 50px;
+            }
+
+            .azul {
+                background-color: rgb(0, 102, 255);     
+                height: 50px;
+                width: 50px;        
+            }
+
+            .amarelo {
+                background-color: rgb(255, 217, 0);
+                height: 50px;
+                width: 50px;
+            } 
+
+            .verde {
+                background-color: green; 
+                height: 50px;
+                width: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Display block</h1>
+        <section class="container">
+            <div class="vermelho block">1</div>
+            <div class="verde block">2</div>
+            <div class="amarelo block">3</div>
+            <div class="azul block">4</div>
+        </section>
+
+        <h1>Display inline</h1>
+        <section class="container">
+            <div class="vermelho inline">1</div>
+            <div class="verde inline">2</div>
+            <div class="amarelo inline">3</div>
+            <div class="azul inline">4</div>
+        </section>
+
+        <h1>Display flex</h1>
+        <section class="container">
+            <div class="vermelho flex">1</div>
+            <div class="verde flex">2</div>
+            <div class="amarelo flex">3</div>
+            <div class="azul flex">4</div>
+        </section>
+
+        <h1>Display inline-block</h1>
+        <section class="container inline-block">
+            <div class="vermelho">1</div>
+            <div class="verde">2</div>
+            <div class="amarelo">3</div>
+            <div class="azul">4</div>
+        </section>
+
+        <h1>flex-direction: row-reverse</h1>
+        <section class="container row-reverse">
+            <div class="vermelho">1</div>
+            <div class="verde">2</div>
+            <div class="amarelo">3</div>
+            <div class="azul">4</div>
+        </section>
+
+        <h1>flex-direction: column-reverse</h1>
+        <section class="container column-reverse">
+            <div class="vermelho">1</div>
+            <div class="verde">2</div>
+            <div class="amarelo">3</div>
+            <div class="azul">4</div>
+        </section>
+
+        <h1>flex-direction: flex-wrap</h1>
+        <section class="container1 flex-wrap">
+            <div class="vermelho">1</div>
+            <div class="verde">2</div>
+            <div class="amarelo">3</div>
+            <div class="azul">4</div>
+        </section>
+    </body>
+</html>
