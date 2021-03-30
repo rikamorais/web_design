@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Modelo Anna Bella - Contato</title>
+        
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/contato.css">
+    </head>
+    <body class="background">
+                <header>
+                    <div>
+                        <img src="imagens/capa.png" class="largura">
+                    </div>
+                    <nav class="largura">
+                        <ul>
+                            <li><a href="index.html"> home</a> |</li>
+                            <li><a href="biografia.html">biografia</a> |</li>
+                            <li><a href="campanhas.html">campanhas publicitárias</a> |</li>
+                            <li><a href="contato.html">contato</a></li>
+                        </ul>
+                    </nav>
+                </header>
+                <div class="texto largura">
+                    <div class="largura1">
+                        <h1>Contato</h1>                  
+                        
+                        <form action="recebe_dados.php" method="POST">
+                            <label for="name">Nome e sobrenome:</label>
+                            <input type="text" id="name" class="size" required>
+
+                            <label for="email">E-mail:</label>
+                            <input type="email" id="email" class="size" required>
+
+                            <label for="mensagem">Mensagem:</label>
+                            <textarea class="size" rows="10" id="mensagem" required></textarea><br>
+
+                            <input type="submit" value="Enviar">
+                            <input type="reset" value="Apagar">
+                        </form>
+
+
+                    </div>
+                </div>
+                <footer>&copy; Todos os direitos reservados</footer>
+    </body>
+    </html>

@@ -1,0 +1,12 @@
+label {
+    display: block;
+    padding-top: 10px;
+}
+
+.size {
+    width: 50%;
+}
+
+.display-block {
+    display: block;
+}
