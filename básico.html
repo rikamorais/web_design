@@ -4,6 +4,12 @@
 <head>
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 <title>básico</title>
+
+<!-- GOOGLE FONTE -->
+ <link rel="preconnect" href="https://fonts.gstatic.com">
+ <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Poppins&display=swap" rel="stylesheet">
+ <!------------------>
+
 <style type="text/css">
 
 
@@ -15,20 +21,27 @@ body {
 
 h1 {
 	margin-left:20px;
+	font-family: 'Libre Baskerville', serif;
 }
 
 h2 {
 	margin-left:30px;
+	font-family: 'Libre Baskerville', serif;
 }
 
 h3, h4, h5, h6, input, p, li, table, form {
 	margin-left:40px;
+	font-family: 'Libre Baskerville', serif;
 }
 
 
 hr {
 	width:90%;
 	text-align: left;
+}
+
+table, td, tr, th {
+	border: 1px solid;
 }
 
 
@@ -46,6 +59,19 @@ hr {
 	font-weight: normal;
 	font-style: italic;
 	font-style: strong;
+}
+
+.botao {
+	background: orange;
+	padding: 10px;
+	font-weight: bold;
+	border-radius: 15px;
+	cursor: pointer;
+	transition: 400ms;
+}
+
+.botao:hover{
+	transform: scale(1.2);
 }
 
 </style>
@@ -74,7 +100,7 @@ hr {
 	Utilizar &lt;em&gt;<em>ênfase</em>&lt;/em&gt;</p>
 	<h3>Negrito</h3>
 	<p>&lt;b&gt;<strong>bold</strong>&lt;/b&gt; Não é mais recomendado<br />
-	Utilizar &lt;strong&gt;<strong>strong</strong>&lt;/stron&gt;</p>
+	Utilizar &lt;strong&gt;<strong>strong</strong>&lt;/strong&gt;</p>
 	<h3>Sublinhado</h3>
 <p>&lt;u&gt;<u>sublinhado</u>&lt;/u&gt;</p>
 <h3>Taxado</h3>
@@ -166,7 +192,7 @@ hr {
 	&lt;th&gt; &lt;thead&gt;table header - cabeçalho: diferencia os títulos dos conteúdos.<br />
 	&lt;tr&gt; table row<br />
 	&lt;td&gt; table data / table cell</h2>
-	<table border="1" width="50%">
+	<table width="50%">
 		
 		<tr>
 			<th>Códigos</th>
@@ -202,7 +228,7 @@ hr {
 		
 		<p>Senha:<input type="password" name="password" /></p>
 		
-		<input type="submit" value="Logar" /> &lt;com este botão de type="submit" o 
+		<input type="submit" value="Logar" class="botao"/> &lt;com este botão de type="submit" o 
 		login e senha aparecem na barra de endereços.</form>
 
 <p>&lt;form action="exemplo.php"&gt;<br />
@@ -210,24 +236,17 @@ hr {
 &lt;p&gt;Senha:&lt;input type="password" name="password"&gt;&lt;/p&gt;<br />
 &lt;input type="submit" value="Logar"&gt;</p>
 	<p>&nbsp;&nbsp;</p>
-
 	
 	<h2>
-		
-			
-	
+
 	type "radio"</h2>
 	<p>
-		
-			
-	
+
 	Para que o usuário escolha somente uma alternativa, é necessário colocar o 
 	atributo "name=''".</p>
 	<div class="caixa">
 	<p>
-		
-			
-	
+
 	&lt;input type="radio" /&gt; Masculino&lt;br /&gt;<br />
 	&lt;input type="radio" /&gt; Feminino</p>
 	

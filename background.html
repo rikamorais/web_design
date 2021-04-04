@@ -4,14 +4,37 @@
         <meta charset="UTF-8">
         <title>CSS - Background</title>
 
+        <!-- GOOGLE FONTE -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Poppins&display=swap" rel="stylesheet">
+
+        <!------------------>
         <style>
+
+            body {
+                margin: 30px 30px;
+            }
+
+            h1 {
+                font-family: 'Libre Baskerville', serif;
+                text-indent: 20px;
+            }
+
+            p {
+                font-family: 'Poppins', sans-serif;
+            }
+
+            div {
+                padding: 20px;
+            }
+
             .background {
                 background-color: aquamarine;
                 border: solid;
             }
 
             .tamanho {
-                width: 500px;
+                width: 90%;
                 height: 500px;
                 align-content: center;
                 justify-content: center;
@@ -51,33 +74,55 @@
             .position-center {
                 background-position: center;
             }
+
         </style>
     </head>
     <body>
-
+        <h1>Background</h1>
         <div class="alinhamento flex">
 
-            <div class="background background tamanho">background-color</div>
-            <div class="background background-image-repeat-y tamanho" >background-image
-                <br>
-                background-repeat-y
+            <div class="background tamanho">
+                <p>
+                    background-color: aquamarine;
+                </p>
             </div>
-            <div class="background background-image-repeat-x tamanho" >background-image
-                <br>
-                background-repeat-x
+            <div class="background background-image-repeat-y tamanho" >
+                
+                <p>
+                    background-image: url(flor.jpg);<br>
+                    background-repeat:repeat-y;
+                </p>
+             
             </div>
-            <div class="background background-image-no-repeat tamanho" >background-image
-                <br>
-                background-no-repeat
+            <div class="background background-image-repeat-x tamanho" >
+                <p>
+                    background-image: url(flor.jpg);<br>
+                    background-repeat:repeat-x;
+                </p>
+            </div>
+            <div class="background background-image-no-repeat tamanho" >
+                <p>
+                    background-image: url(flor.jpg);<br>
+                    background-repeat:no-repeat;
+                </p>
             </div>
 
-            <div class="background background-image-no-repeat position-right tamanho" >background-position: right
+            <div class="background background-image-no-repeat position-right tamanho" >
+                <p>
+                    background-position: right;
+                </p>
             </div>
 
-            <div class="background background-image-no-repeat position-center tamanho" >background-position: bottom
+            <div class="background background-image-no-repeat position-center tamanho">
+                <p>
+                    background-position: bottom;
+                </p>
             </div>
 
-            <div class="background background-image-no-repeat position-center tamanho" >background-position: center
+            <div class="background background-image-no-repeat position-center tamanho" >
+                <p>
+                    background-position: center;
+                </p>
             </div>
 
 

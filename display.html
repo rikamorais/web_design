@@ -3,8 +3,15 @@
     <head>
         <meta charset="UTF-8">
         <title>CSS - Display</title>
-
+        <!-- GOOGLE FONTE -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Train+One&display=swap" rel="stylesheet">
+        <!------------------>
         <style>
+            body {
+                margin: 0 30px;
+                font-family: 'Poppins', sans-serif;
+            }
 
             h1 { 
                 margin-top: 50px;
@@ -20,7 +27,7 @@
 
             .container1 {
                 text-align: center;
-                width: 500px;
+                width: 100px;
                 height: 100;
                 border: solid;
                 border-color: #cccccc;
@@ -98,11 +105,11 @@
         </section>
 
         <h1>Display flex</h1>
-        <section class="container">
-            <div class="vermelho flex">1</div>
-            <div class="verde flex">2</div>
-            <div class="amarelo flex">3</div>
-            <div class="azul flex">4</div>
+        <section class="container flex">
+            <div class="vermelho">1</div>
+            <div class="verde">2</div>
+            <div class="amarelo">3</div>
+            <div class="azul">4</div>
         </section>
 
         <h1>Display inline-block</h1>
@@ -122,7 +129,7 @@
         </section>
 
         <h1>flex-direction: column-reverse</h1>
-        <section class="container column-reverse">
+        <section class="container flex column-reverse">
             <div class="vermelho">1</div>
             <div class="verde">2</div>
             <div class="amarelo">3</div>
@@ -130,7 +137,7 @@
         </section>
 
         <h1>flex-direction: flex-wrap</h1>
-        <section class="container1 flex-wrap">
+        <section class="container1 flex flex-wrap">
             <div class="vermelho">1</div>
             <div class="verde">2</div>
             <div class="amarelo">3</div>

@@ -8,173 +8,210 @@
         <meta name="Keywords" content="html, formulario, tag">
 
         <title>Tags para formulários</title>
+
+        <!-- GOOGLE FONTE -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&family=Poppins&display=swap" rel="stylesheet">
+        <!------------------>
+
+        <style>
+            body {
+                margin: 0 30px;
+                text-align: justify;
+            }
+
+            h1, h2, h3, h4, h5, h6 {
+                font-family: 'Kiwi Maru', serif;
+            }
+
+            p, li {
+                font-family: 'Poppins', sans-serif;
+                line-height: 30px;
+                margin-bottom: 20px;
+            }
+
+            .container {
+                width: 60%;
+            }
+
+            @media (max-width: 1000px){
+                .container {
+                    width: 80%;
+                }
+            }
+
+            @media (max-width: 700px){
+                .container {
+                    width: 90%;
+                }
+            }
+        </style>
     </head>
 
     <body>
-        <p>*Apostila do professor Julius (Etec Sebrae)</p>
+        <div class="container">
+            <h1>Formulários</h1>
+            <p>*Apostila do professor Julius (Etec Sebrae)</p>
 
-        <br>
-
-        <h3>Tag &lt;form&gt;...&lt;/form&gt;</h3>
-        <p>
-            As tags para a criação de formulário são &lt;form&gt; e &lt;/form&gt;
-        </p>
-        <p>
-            Os atributos da tag &lt;form&gt; são:
-        </p>
-
-        <ul>
-            <li>
-                <b>action</b>: informa o endereço (URL) para o qual o conteúdo do formulário será enviado.
-                Se este atributo for omitido, o endereço corrente (página atual) será usado.
-            </li>
-            <li>
-                <b>method</b>: informa o método de transferência dos dados que será usado pelo atributo
-                “action”, sendo possível adotar os valores:
-
-                <li>
-                    <b>get</b>: valor padrão do atributo “action”, usado quando se deseja enviar os dados
-                    de um formulário para um endereço (URL de um servidor), seguindo o formato
-                    “endereço?nome=ação”. Esse tipo de ação apresenta os dados do formulário na
-                    barra de endereços do browser.
-                </li>
-                <li>
-                    <b>post</b>: faz com que os dados do formulário sejam enviados para o servidor
-definido no atributo “action” em um bloco de dados. Este é o método mais
-indicado, uma vez que os dados não são apresentados na barra de endereço do
-navegador.
-                </li>
-            </li>
-
-            <li><b>enctype</b>: especifica a forma de submissão dos dados de um formulário quando se usa
-                o valor “post” no atributo “method”. O valor padrão desse atributo é “application/xwww-
-                form-urlencoded” (dados do formulário são passados de forma codificada).
-                Caso seja usado com o valor “file” do atributo “type” (será mostrado mais adiante), o
-                valor desse atributo deve ser “multpart/form-data” (dados do formulário são
-                passados em multipartes). É muito comum o uso do valor “text/plain” para envio de
-                dados de um formulário de maneira formatada.
-            </li>
-            <li>
-                <b>autocomplete</b>: (criado no HTML 5) indica que o browser pode (conteúdo = “on”) ou
-                não (conteúdo = “off”) recuperar automaticamente uma informação já preenchida
-                anteriormente pelo usuário (exemplo: nome, endereço, email etc.) Normalmente
-                este atributo é usado com elemento input.</li>
-            </li>    
-        </ul>
-
-        <br>
-        <br>
-
-        <h3>Tag &lt;fieldset&gt;...&lt;/fieldset&gt;</h3>
-        <p>é usada para agrupar elementos relacionados em um formulário.
-
-            A tag desenha uma caixa ao redor dos elementos relacionados.</p>
-
-        <br>
-        <br>
-
-        <h3>Tag &lt;legend&gt;</h3>
-            <p>A tag define uma legenda para o elemento &lt;fieldset&gt; .</p>
-
-            
-
-            <table>
-                <tr>
-                    <td width="300">
-                        <p><strong>Exemplo:</strong></p>
-                        
-                        <pre>
-                &lt;form&gt;
-                    &lt;fieldset&gt;
-                        &lt;legend&gt;Exemplo
-                        Legenda
-                    &lt;/fieldset&gt;
-                &lt;/form&gt;
-                </pre>
-                    </td>
-
-                    <td width="300">
-                        <p><strong>Resultado:</strong></p>
+            <br>
+    
+            <h3>Tag &lt;form&gt;...&lt;/form&gt;</h3>
             <p>
-            <form>
-                <fieldset>
-                    <legend>Legenda
-                    </legend>
-                </fieldset>
-            </form>
+                As tags para a criação de formulário são &lt;form&gt; e &lt;/form&gt;
             </p>
-                    </td>
-                </tr>
-            </table>
-
+            <p>
+                Os atributos da tag &lt;form&gt; são:
+            </p>
+    
+            <ul>
+                <li>
+                    <b>action</b>: informa o endereço (URL) para o qual o conteúdo do formulário será enviado.
+                    Se este atributo for omitido, o endereço corrente (página atual) será usado.
+                </li>
+                <li>
+                    <b>method</b>: informa o método de transferência dos dados que será usado pelo atributo
+                    “action”, sendo possível adotar os valores:
+    
+                    <ul>
+                        <li>
+                            <b>get</b>: valor padrão do atributo “action”, usado quando se deseja enviar os dados
+                            de um formulário para um endereço (URL de um servidor), seguindo o formato
+                            “endereço?nome=ação”. Esse tipo de ação apresenta os dados do formulário na
+                            barra de endereços do browser.
+                        </li>
+                        <li>
+                            <b>post</b>: faz com que os dados do formulário sejam enviados para o servidor
+                            definido no atributo “action” em um bloco de dados. Este é o método mais
+                            indicado, uma vez que os dados não são apresentados na barra de endereço do
+                            navegador.
+                        </li>
+                    </ul>
+                </li>
+    
+                <li><b>enctype</b>: especifica a forma de submissão dos dados de um formulário quando se usa
+                    o valor “post” no atributo “method”. O valor padrão desse atributo é “application/xwww-
+                    form-urlencoded” (dados do formulário são passados de forma codificada).
+                    Caso seja usado com o valor “file” do atributo “type” (será mostrado mais adiante), o
+                    valor desse atributo deve ser “multpart/form-data” (dados do formulário são
+                    passados em multipartes). É muito comum o uso do valor “text/plain” para envio de
+                    dados de um formulário de maneira formatada.
+                </li>
+                <li>
+                    <b>autocomplete</b>: (criado no HTML 5) indica que o browser pode (conteúdo = “on”) ou
+                    não (conteúdo = “off”) recuperar automaticamente uma informação já preenchida
+                    anteriormente pelo usuário (exemplo: nome, endereço, email etc.) Normalmente
+                    este atributo é usado com elemento input.</li>
+                </li>    
+            </ul>
+    
+                <br>
+                <br>
+        
+                <h3>Tag &lt;fieldset&gt;...&lt;/fieldset&gt;</h3>
+                <p>é usada para agrupar elementos relacionados em um formulário.
+        
+                    A tag desenha uma caixa ao redor dos elementos relacionados.</p>
+        
+                <br>
+                <br>
+        
+                <h3>Tag &lt;legend&gt;</h3>
+                    <p>A tag define uma legenda para o elemento &lt;fieldset&gt; .</p>
+        
+                
+    
+                <table>
+                    <tr>
+                        <td width="300">
+                            <p><strong>Exemplo:</strong></p>
+                            
+                            <pre>
+                    &lt;form&gt;
+                        &lt;fieldset&gt;
+                            &lt;legend&gt;Exemplo
+                            Legenda
+                        &lt;/fieldset&gt;
+                    &lt;/form&gt;
+                    </pre>
+                        </td>
+    
+                        <td width="300">
+                            <p><strong>Resultado:</strong></p>
+                <p>
+                <form>
+                    <fieldset>
+                        <legend>Legenda
+                        </legend>
+                    </fieldset>
+                </form>
+                </p>
+                        </td>
+                    </tr>
+                </table>
+    
+    
+                <br>
+                <br>
+    
+            <h3>Tag &lt;label&gt;</h3>
+    
+            <p>
+                A tag &lt;label&gt; apresenta um texto de identificação (rótulo). Está ligado
+                diretamente com outros elemento de um formulário e sua função é identificá-los.
+                Possui os seguintes atributos:
+            </p>
+    
+    <ul>
+        <li>
+            <b>for</b>: o nome interno associado ao atributo “id” de identificação de outros
+            elementos de formulário (serão apresentados em seguida).
+        </li>
+        <li><b>title</b>: o texto explicativo que será apresentado quando o ponteiro do mouse
+            permanecer sobre esse elemento por mais de um segundo. Esse atributo é
+            opcional.
+        </li>
+    </ul>
+    
+            <p>Exemplo 1 de uso: &lt;label&gt;Nome&lt;/label&gt;</p>
+            <p>Exemplo 2 de uso: &lt;label for=“cep”&gt;CEP&lt;/label&gt;</p>
+            <p>Exemplo 3 de uso: &lt;label title=“Exemplo de observação”&gt;OBS.:&lt;/label&gt;</p>
             
+            <p>Ainda assim, o uso de um label não consegue ser evidentemente demonstrado sem
+            estar associado a algum outro elemento. Veja a seguir um uso mais eficiente dele.</p> 
             
-
-           
-
-
-
+            <p><strong>Atenção</strong>: Para esse elemento é necessário abrir e fechar a tag: &lt;label&gt;...&lt;label&gt;</p>
+            
             <br>
             <br>
-
-        <h3>Tag &lt;label&gt;</h3>
-
-        <p>
-            A tag &lt;label&gt; apresenta um texto de identificação (rótulo). Está ligado
-diretamente com outros elemento de um formulário e sua função é identificá-los.
-Possui os seguintes atributos:
-        </p>
-
-<ul>
-    <li>
-        <b>for</b>: o nome interno associado ao atributo “id” de identificação de outros
-elementos de formulário (serão apresentados em seguida).
-    </li>
-    <li><b>title</b>: o texto explicativo que será apresentado quando o ponteiro do mouse
-permanecer sobre esse elemento por mais de um segundo. Esse atributo é
-opcional.
-    </li>
-</ul>
-
-<p>Exemplo 1 de uso: &lt;label&gt;Nome&lt;/label&gt;</p>
-<p>Exemplo 2 de uso: &lt;label for=“cep”&gt;CEP&lt;/label&gt;</p>
-<p>Exemplo 3 de uso: &lt;label title=“Exemplo de observação”&gt;OBS.:&lt;/label&gt;</p>
-
-<p>Ainda assim, o uso de um label não consegue ser evidentemente demonstrado sem
-estar associado a algum outro elemento. Veja a seguir um uso mais eficiente dele.</p> 
-
-<p><strong>Atenção</strong>: Para esse elemento é necessário abrir e fechar a tag: &lt;label&gt;...&lt;label&gt;</p>
-  
-<br>
-<br>
-
-<h3>Tag input</h3>  
-<p>(tag órfã - &lt;input/&gt;): utilizado para criar campos de entrada de
-dados em um formulário. É o recurso mais comum e mais utilizado. Permite a
-inserção de múltiplos componentes de controle em um formulário, que podem ser
-campos de textos, botões, controles deslizantes e outros. Possui os seguintes
-atributos:</p>
-
-<ul>
-    <li><strong>name</strong>: estabelece o nome do elemento (campo, área de texto ou botão) no
-formulário. Obrigatório quando há mais de um elemento do mesmo tipo.</li>
-    <li><strong>id</strong>: nome de identificação associado ao atributo “for” da tag &lt;label&gt;.</li>
-    <li><strong>type</strong>: tipo de entrada de dados que o campo vai receber. Aceita os valores:
-        <li><strong>text</strong>: formato caixa de texto, utilizado para receber dados do tipo caractere
-(texto simples).</li>
-        <li><strong>password</strong>: utilizado exclusivamente para campos de senha.</li>
-        <li><strong>radio</strong>: tem a forma de um botão circular, utilizado para selecionar apenas
-uma opção numa lista de opções predefinidas (todas as opções devem ter o
-mesmo conteúdo no atributo name).</li>
-    </li>
-    <li><strong>email</strong></li>
-    <li><strong>tel</strong></li>
-    <li><strong>number</strong></li>
-    <li><strong>date</strong></li>
-    <li><strong>datetime</strong></li>
-    <li><strong>month</strong></li>
-    <li><strong>search</strong></li>
-</ul>
+            
+            <h3>Tag input</h3>  
+            <p>(tag órfã - &lt;input/&gt;): utilizado para criar campos de entrada de
+            dados em um formulário. É o recurso mais comum e mais utilizado. Permite a
+            inserção de múltiplos componentes de controle em um formulário, que podem ser
+            campos de textos, botões, controles deslizantes e outros. Possui os seguintes
+            atributos:</p>
+            
+            <ul>
+                <li><strong>name</strong>: estabelece o nome do elemento (campo, área de texto ou botão) no
+            formulário. Obrigatório quando há mais de um elemento do mesmo tipo.</li>
+                <li><strong>id</strong>: nome de identificação associado ao atributo “for” da tag &lt;label&gt;.</li>
+                <li><strong>type</strong>: tipo de entrada de dados que o campo vai receber. Aceita os valores:
+                    <li><strong>text</strong>: formato caixa de texto, utilizado para receber dados do tipo caractere
+            (texto simples).</li>
+                    <li><strong>password</strong>: utilizado exclusivamente para campos de senha.</li>
+                    <li><strong>radio</strong>: tem a forma de um botão circular, utilizado para selecionar apenas
+            uma opção numa lista de opções predefinidas (todas as opções devem ter o
+            mesmo conteúdo no atributo name).</li>
+                </li>
+                <li><strong>email</strong></li>
+                <li><strong>tel</strong></li>
+                <li><strong>number</strong></li>
+                <li><strong>date</strong></li>
+                <li><strong>datetime</strong></li>
+                <li><strong>month</strong></li>
+                <li><strong>search</strong></li>
+            </ul>
+        </div>
 
 
     </body>

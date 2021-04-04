@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sombra</title>
+    <!-- GOOGLE FONTE -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&family=Poppins&display=swap" rel="stylesheet">
+    <!------------------>
+    <style>
+
+        body {
+            margin: 0 30px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Kiwi Maru', serif;
+        }
+
+        p {
+            font-family: 'Poppins', sans-serif;
+            padding: 30px;
+        }
+
+        .imagem {
+            opacity: 60%;
+            transition: 400ms;
+            box-shadow: 10px 10px 5px 5px #000000, -10px -10px yellowgreen, -20px 20px rgba(255,0,0,0.5);
+            margin: 30px 20px;
+        }
+
+        .imagem:hover {
+            opacity: 100%;
+        }
+
+        .sombra {
+            box-shadow: inset 0 0 30px #FF0000;
+        }
+
+        .sombra-texto {
+            text-shadow: 2px 2px #FF0000;;
+        }
+    </style>
+</head>
+<body>
+    <pre>
+        .sombra {
+            box-shadow: inset 0 0 #FF0000;
+        }
+
+        => inset indica borda interna
+
+        .imagem:hover {
+            opacity: 100%;
+        }
+        .imagem {
+            opacity: 60%;
+            transition: 400ms;
+            box-shadow: 10px 10px 5px 5px #000000, -10px -10px yellowgreen, -20px 20px rgba(255,0,0,0.5);
+            
+            => 10px no eixo x e no eixo y, 5px de blur, 5px de intensidade da borda, 
+            e outra sombra com -10px nos eixos x e y
+        }
+    </pre>
+    <h3>Bordas na imagem:</h3>
+    <img class="imagem" src="imagens/imagem1.png" alt="imagem"><br><br>
+
+    <h3>Bordas internas no parágrafo:</h3>
+
+    <pre>
+    .sombra {
+        box-shadow: inset 0 0 30px #FF0000;
+    }
+    </pre>
+
+    &lt;p class="sombra"&gt;&lt;/p&gt;
+    <p class="sombra">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. 
+        Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo 
+        magna eros quis urna. Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque 
+        habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra 
+        nonummy pede. Mauris et orci. Aenean nec lorem.
+    </p>
+
+    <h3>Sombra em textos:</h3>
+    
+    <pre>
+        .sombra-texto {
+            text-shadow: 2px 2px #FF0000;;
+        }
+    </pre>
+
+    &lt;p class="sombra-texto"&gt;&lt;/p&gt;
+    <p class="sombra-texto">
+        Lorem ipsum.
+    </p>
+</body>
+</html>
