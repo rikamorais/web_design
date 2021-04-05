@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <!-- GOOGLE FONTE -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Righteous&display=swap" rel="stylesheet">
+    <!------------------>
+
+    <style>
+        body {
+            margin: 0 30px;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Righteous', cursive; 
+            margin-top: 30px;
+        }
+
+        p, li {
+            font-family: 'Comfortaa', cursive;
+            margin-bottom: 10px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h1>FlexBox</h1>
+            <h3>
+                Propriedades aplicadas ao container:
+            </h3>
+            <ul>
+                <li>display:flex</li>
+                <li>display:direction</li>
+                <li>justify-content</li>
+                <li>flex-wrap</li>
+                <li>flex-flow</li>
+                <li>align-items</li>
+                <li>align-content</li>
+            </ul>
+        </div>
+    
+        <div>
+            <h3>
+                Propriedades aplicadas aos flex items:
+            </h3>
+            <ul>
+                <li>order</li>
+                <li>flex-grow</li>
+                <li>flex-shrink</li>
+                <li>flex-basis</li>
+                <li>flex</li>
+                <li>align-self</li>
+            </ul>
+        </div>
+    
+        <div>
+            <h3>flex-grow flex-shrink flex-basis</h3>
+            <p>Estas propriedades podem ser acionadas em um único comando:</p>
+            <p>flex: grow shrink basis;<br>
+           fles  0      1      25%;</p>
+        </div>
+    </div>
+</body>
+</html>

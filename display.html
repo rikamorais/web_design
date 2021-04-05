@@ -28,7 +28,7 @@
             .container1 {
                 text-align: center;
                 width: 100px;
-                height: 100;
+                height: 100px;
                 border: solid;
                 border-color: #cccccc;
             }
@@ -47,6 +47,11 @@
 
             .flex-wrap {
                 flex-wrap: wrap;
+            }
+
+            .flex-flow {
+                display: flex;
+                flex-flow: column wrap;
             }
 
             .inline-block {
@@ -138,6 +143,15 @@
 
         <h1>flex-direction: flex-wrap</h1>
         <section class="container1 flex flex-wrap">
+            <div class="vermelho">1</div>
+            <div class="verde">2</div>
+            <div class="amarelo">3</div>
+            <div class="azul">4</div>
+        </section>
+
+        <h1>flex-flow</h1>
+        <p>O flex-flow é a mistura do flex-direction: column com o flex-wrap: wrap.</p>
+        <section class="container1 flex-flow">
             <div class="vermelho">1</div>
             <div class="verde">2</div>
             <div class="amarelo">3</div>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aumento e diminuição proporcional</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&family=Poppins:wght@400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 30px;
+        }
+
+        h1 {
+            font-family: 'Kiwi Maru', serif;
+        }
+
+        div {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        p {
+            font-family: 'Poppins', sans-serif;
+            display: block;
+        }
+
+        .flexContainer {
+        display: flex;
+        }
+        .flexItem {
+        width: 200px;
+        border: solid 1px;
+        margin: 10px 10px 0 0;
+        text-align: center;
+        padding: 10px;
+        }
+
+        .flexItem:first-child {
+        flex-shrink: 4;
+        }
+
+        .flexItem:nth-child(4) {
+            flex-grow: 1;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>flex-grow flex-shrink flex-basis</h1>
+    <main class="flexContainer">        
+        <div class="flexItem firstRow">Conteúdo</div>
+        <div class="flexItem firstRow">Conteúdo</div>
+        <div class="flexItem firstRow">Conteúdo</div>
+        <div class="flexItem firstRow">Conteúdo</div>
+
+        
+      </main>
+      <p>
+        Forma condensada:
+    </p>
+    <p>
+        flex grow shrink basis
+    </p>
+    <p>
+        flex: 1 1 300px
+    </p>
+</body>
+</html>
